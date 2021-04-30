@@ -21,8 +21,6 @@ public class PlayerController : MonoBehaviour
 
     float mx;
 
-
-
     private void Update()
     {
         mx = Input.GetAxisRaw("Horizontal");

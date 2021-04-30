@@ -8,6 +8,7 @@ public class Respawn : MonoBehaviour
     public GameObject playerToRespawn;
     public GameObject playerToDestroy;
     public bool playerIsDead = false;
+    public int i;
 
     public void Update()
     {

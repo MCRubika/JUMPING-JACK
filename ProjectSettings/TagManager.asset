@@ -8,6 +8,7 @@ TagManager:
   - Dialog
   - PNJ
   - Legs
+  - DyingZone
   layers:
   - Default
   - TransparentFX
