@@ -9,6 +9,7 @@ TagManager:
   - PNJ
   - Legs
   - DyingZone
+  - Descente Rapide
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Ground
   - Dialog
   - PNJ
-  - 
+  - Decor
   - 
   - 
   - 

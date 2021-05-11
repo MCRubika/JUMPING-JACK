@@ -21,6 +21,11 @@ public class PlayerController : MonoBehaviour
 
     float mx;
 
+    private void Awake()
+    {
+        pcInstance = this;
+    }
+
     private void Update()
     {
         mx = Input.GetAxisRaw("Horizontal");
@@ -68,8 +73,5 @@ public class PlayerController : MonoBehaviour
             return true;
         }
         return false;
-
     }
-
-
 }
