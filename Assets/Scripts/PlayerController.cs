@@ -74,4 +74,16 @@ public class PlayerController : MonoBehaviour
         }
         return false;
     }
+
+    public void StopPlayerController()
+    {
+      movementSpeed = 0;
+      JumpForce = 0f;
+    }
+
+    public void RestaurePlayerController()
+    {
+        movementSpeed = 50;
+        JumpForce = 20f;
+    }
 }
