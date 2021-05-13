@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class LevelManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class LevelManager : MonoBehaviour
 
     public GameObject Saut2;
     public Transform Saut2Point;
+
+    public CinemachineVirtualCamera mycam;
 
     private void Awake()
     {
@@ -29,7 +32,9 @@ public class LevelManager : MonoBehaviour
     }
     public void Respawn()
     {
-        Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);
+        GameObject clone = Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);
+        mycam.Follow = clone.transform;
+
         Instantiate(Saut1, Saut1Point.position, Quaternion.identity);
         Instantiate(Saut2, Saut2Point.position, Quaternion.identity);
         destroyingZone.SetActive(false);

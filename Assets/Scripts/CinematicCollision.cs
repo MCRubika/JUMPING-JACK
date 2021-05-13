@@ -12,14 +12,6 @@ public class CinematicCollision : MonoBehaviour
         timeline = GetComponent<PlayableDirector>();
     }
 
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            timeline.Stop();
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
