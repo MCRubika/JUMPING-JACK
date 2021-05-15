@@ -10,18 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ab63e37dae716444849fc7f37342cfd, type: 3}
-  m_Name: Bob
+  m_Name: Boulettedepapier
   m_EditorClassIdentifier: 
-  nameuh: Bob
+  nameuh: Boulettedepapier
   dialogue:
-  - ...
-  - "Euh Salut...\xE7a...roule ? "
-  - "Au d\xE9but du jeu. "
-  - 'Qu''est ce que j''en sais ? Vis ta vis. Soit heureux. '
-  - "Grande question \xE7a...Quel est notre but \xE0 tous ? ...Quel est le but de
-    la vie...Quel est son sens..."
+  - Mon ballloooooooonnnnnn...
+  - "Mon ballon est de l'autre cot\xE9 de la rivi\xE8re ! J'ai peur de traverseeeer
+    !"
   playerDialogue:
-  - Salut !
-  - 'Ou suis-je ? '
-  - 'Qu''est ce que je dois faire ? '
-  - 'Quel est mon but ? '
+  - "\xE7a va toi ? "

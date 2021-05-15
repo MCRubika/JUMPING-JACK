@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     //Déplacement
     public float movementSpeed;
     public Rigidbody2D rb;
-    //Jump
+    [Header("Jump")]
     public float JumpForce = 20f;
     public Transform feet;
     public LayerMask groundLayers;
@@ -16,14 +16,21 @@ public class PlayerController : MonoBehaviour
     public int nombreDeSaut;
     public GameObject sautUI1;
     public GameObject sautUI2;
+    private float distanceGround; 
 
     public GameObject player;
+    public bool isJumping = false;
 
     float mx;
 
     private void Awake()
     {
         pcInstance = this;
+    }
+
+    private void Start()
+    {
+        distanceGround = feet.position.y - transform.position.y;
     }
 
     private void Update()
@@ -33,6 +40,16 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             Jump();
+        }
+
+        if (Input.GetButtonDown("Jump") && IsGrounded()&& i < nombreDeSaut)
+        {
+            isJumping = true;
+        }
+
+        else
+        {
+            isJumping = false;
         }
     }
 
@@ -49,6 +66,7 @@ public class PlayerController : MonoBehaviour
             Vector2 movement = new Vector2(rb.velocity.x, JumpForce);
             rb.velocity = movement;
             i ++;
+    
      
             if (i == 1)
             {
@@ -67,7 +85,8 @@ public class PlayerController : MonoBehaviour
 
     public bool IsGrounded()
     {
-        Collider2D groundCheck = Physics2D.OverlapCircle(feet.position, 0.5f, groundLayers);
+        Collider2D groundCheck = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y + distanceGround), 0.5f, groundLayers);
+
         if (groundCheck != null)
         {
             return true;

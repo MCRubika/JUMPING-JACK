@@ -10,18 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ab63e37dae716444849fc7f37342cfd, type: 3}
-  m_Name: Bob
+  m_Name: Professeur
   m_EditorClassIdentifier: 
-  nameuh: Bob
+  nameuh: Professeur
   dialogue:
-  - ...
-  - "Euh Salut...\xE7a...roule ? "
-  - "Au d\xE9but du jeu. "
-  - 'Qu''est ce que j''en sais ? Vis ta vis. Soit heureux. '
-  - "Grande question \xE7a...Quel est notre but \xE0 tous ? ...Quel est le but de
-    la vie...Quel est son sens..."
+  - 'Hello Darling <3 '
+  - "Je suis le professeur Evelynn Pi\xE9ron ! J'\xE9tudie les diff\xE9rentes esp\xE8ces
+    et leurs forces ! Ici c'est le saut !"
+  - "Si tu pouvais me montrer comment tu sautes en \xE9change je te payerai ! Met
+    toi dans la machine ! "
   playerDialogue:
-  - Salut !
-  - 'Ou suis-je ? '
-  - 'Qu''est ce que je dois faire ? '
-  - 'Quel est mon but ? '
+  - 'Vous etes qui ? '
+  - 'Comment je peux vous aider ? '

@@ -6,6 +6,7 @@ using Cinemachine;
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
+
     public GameObject destroyingZone;
     public Transform respawnPoint;
     public GameObject playerPrefab;
@@ -18,11 +19,25 @@ public class LevelManager : MonoBehaviour
 
     public CinemachineVirtualCamera mycam;
 
+    public int pieces;
+    public int jambes;
+    public int poules;
+    public int jouet;
+    public int sautDansLeVide;
+
     private void Awake()
     {
         instance = this;
     }
 
+    void Start()
+    {
+        pieces = 0;
+        jambes = 0;
+        poules = 0;
+        jouet = 0;
+        sautDansLeVide = 0;
+    }
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))

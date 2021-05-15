@@ -101,6 +101,22 @@ public class DialogManager : MonoBehaviour
                 npcDialogueBox.text = npc.dialogue[3];
             }
         }
+        else if (curResponseTracker == 3 && npc.playerDialogue.Length >= 3)
+        {
+            playerResponse.text = npc.playerDialogue[3];
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                npcDialogueBox.text = npc.dialogue[4];
+            }
+        }
+        else if (curResponseTracker == 4 && npc.playerDialogue.Length >= 4)
+        {
+            playerResponse.text = npc.playerDialogue[4];
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                npcDialogueBox.text = npc.dialogue[5];
+            }
+        }
     }
     /*
     void OnMouseOver()
