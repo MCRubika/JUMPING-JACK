@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	824317709	MainTheme			\Musique\MainTheme	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	530975743	WELCOME	E:\CETKOVIC Marianne - Kingdom Two Crowns Coins\Jumping Jack\JUMPING-JACK\JUMPING-JACK_WwiseProject\.cache\Mac\SFX\WELCOME_D79FB2B7.wem		\Actor-Mixer Hierarchy\Musique\WELCOME		14255100
+

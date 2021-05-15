@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B5CDC436-B2DE-4639-8B28-8AC85533C740}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Musique" ID="{B5CDC436-B2DE-4639-8B28-8AC85533C740}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="WELCOME" ID="{83640A0C-BD4C-4043-8450-E51AC3DB3B65}" ShortID="854236708">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9DB9A599-9F4D-4E73-850C-7223F0BEA20E}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7B69D49-8EFD-4800-9989-CD2F803E0257}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EEF2A6C-F9FA-4CD0-93C1-51ECDBD277C4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="WELCOME" ID="{7402B513-989E-43FD-A8DA-ED7789B9EB5E}">
+							<Language>SFX</Language>
+							<AudioFile>WELCOME.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="530975743"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="WELCOME" ID="{7402B513-989E-43FD-A8DA-ED7789B9EB5E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
