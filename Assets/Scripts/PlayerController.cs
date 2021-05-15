@@ -102,7 +102,7 @@ public class PlayerController : MonoBehaviour
 
     public void RestaurePlayerController()
     {
-        movementSpeed = 50;
+        movementSpeed = 8;
         JumpForce = 20f;
     }
 }

@@ -38,6 +38,7 @@ public class PauseCinematique : MonoBehaviour
     {
         if (childIndex == 0)
         {
+            Debug.Log(Dialog[Index].transform.GetChild(childIndex));
             Dialog[Index].transform.GetChild(childIndex).gameObject.SetActive(true); //on appelle un enfant
 
             childIndex += 1; // on incrémente
