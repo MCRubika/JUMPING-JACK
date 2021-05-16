@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Aerobic_Theme" ID="{4355D60A-90BA-4F9F-9A5B-1D35121F35EF}">
+					<ChildrenList>
+						<Action Name="" ID="{2BC68160-41CB-4146-80F8-FB91A0259F7F}" ShortID="946076462">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="this-aerobic-video-wins-everything-480p-extended" ID="{F746B830-F00A-4D38-BBD3-9BF677DCA5BA}" WorkUnitID="{B5CDC436-B2DE-4639-8B28-8AC85533C740}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

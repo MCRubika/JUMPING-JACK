@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	824317709	MainTheme			\Musique\MainTheme	
+	3052177634	Aerobic_Theme			\Musique\Aerobic_Theme	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	530975743	WELCOME	E:\CETKOVIC Marianne - Kingdom Two Crowns Coins\Jumping Jack\JUMPING-JACK\JUMPING-JACK_WwiseProject\.cache\Mac\SFX\WELCOME_D79FB2B7.wem		\Actor-Mixer Hierarchy\Musique\WELCOME		14255100
+	544700504	this-aerobic-video-wins-everything-480p-extended	E:\CETKOVIC Marianne - Kingdom Two Crowns Coins\Jumping Jack\JUMPING-JACK\JUMPING-JACK_WwiseProject\.cache\Mac\SFX\this-aerobic-video-wins-everything-480p-extended_D79FB2B7.wem		\Actor-Mixer Hierarchy\Musique\this-aerobic-video-wins-everything-480p-extended		39104576
 

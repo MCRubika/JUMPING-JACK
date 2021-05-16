@@ -16,11 +16,19 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1595399782">
+		<SoundBank Id="3161908922" Language="SFX" Hash="94010648">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3052177634" Name="Aerobic_Theme" ObjectPath="\Events\Musique\Aerobic_Theme" MaxAttenuation="50.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="544700504" Language="SFX">
+							<ShortName>this-aerobic-video-wins-everything-480p-extended.wav</ShortName>
+							<Path>SFX\this-aerobic-video-wins-everything-480p-extended_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="824317709" Name="MainTheme" ObjectPath="\Events\Musique\MainTheme" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="530975743" Language="SFX">

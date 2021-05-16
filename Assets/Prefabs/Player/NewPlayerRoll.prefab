@@ -161,7 +161,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   i: 0
-  nombreDeSaut: 2
+  nombreDeSaut: 0
+  initSaut: 0
   sautUI1: {fileID: 8643501849337717172, guid: 0052ffe4a383da84c940a5782137bdb8, type: 3}
   sautUI2: {fileID: 5607139805958666829, guid: 9f65a18ce4b1cb144bd196e4aafc55cf, type: 3}
   player: {fileID: 1220408637003770599}

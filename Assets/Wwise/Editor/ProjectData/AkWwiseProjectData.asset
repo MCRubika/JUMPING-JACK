@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 51326dac4ecc5b4c92d0f1a9c608b060
     GuidInternal: 
-    m_lastTime: -8585805045038542660
+    m_lastTime: -8585804028971103328
     List:
     - name: Main
       guid: bf2ae4c46378634da98070099db1645b
@@ -107,8 +107,25 @@ MonoBehaviour:
     ParentPath: Events\Musique
     guid: 593e2d5e67802d4c9179440868b43a80
     GuidInternal: 
-    m_lastTime: -8585805045040053374
+    m_lastTime: -8585804028971153193
     List:
+    - name: Aerobic_Theme
+      guid: 0ad65543ba909f4f9a5b1d35121f35ef
+      id: 3052177634
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Musique
+        ObjectType: 12
+        guid: 593e2d5e67802d4c9179440868b43a80
+      - ElementName: Aerobic_Theme
+        ObjectType: 3
+        guid: 0ad65543ba909f4f9a5b1d35121f35ef
+      Path: Events\Musique\Aerobic_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: MainTheme
       guid: 85db57457c558042b1dd628a7b21fc38
       id: 824317709
@@ -183,7 +200,7 @@ MonoBehaviour:
     m_lastTime: -8585805045038472503
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000080000000c0000000d000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

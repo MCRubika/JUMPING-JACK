@@ -16,7 +16,7 @@ public class EnfantApprentissageSaut : MonoBehaviour
         {
             if (collision.tag == "Player")
             {
-                LevelManager.instance.augmentationSauts += 1;
+                LevelManager.instance.augmentationSauts += 2;
                 i++;
                 Debug.Log(LevelManager.instance.augmentationSauts);
             }

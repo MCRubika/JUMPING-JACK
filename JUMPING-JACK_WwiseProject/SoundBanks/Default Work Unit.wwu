@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{C4E42ABF-7863-4D63-A980-70099DB1645B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="MainTheme" ID="{4557DB85-557C-4280-B1DD-628A7B21FC38}" WorkUnitID="{5E2D3E59-8067-4C2D-9179-440868B43A80}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Aerobic_Theme" ID="{4355D60A-90BA-4F9F-9A5B-1D35121F35EF}" WorkUnitID="{5E2D3E59-8067-4C2D-9179-440868B43A80}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
