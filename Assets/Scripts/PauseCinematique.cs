@@ -30,7 +30,7 @@ public class PauseCinematique : MonoBehaviour
     {
         if (isJustDialog == false)
         {
-            if (Input.GetButtonDown("Jump") && canSkip) // vérifie si le bool est true
+            if (Input.GetKeyDown(KeyCode.E) && canSkip) // vérifie si le bool est true
                 SkipDialog();
         }
     }

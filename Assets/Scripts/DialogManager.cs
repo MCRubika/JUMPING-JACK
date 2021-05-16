@@ -37,6 +37,16 @@ public class DialogManager : MonoBehaviour
         }
     }
 
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            talkingNow = false;
+            Debug.Log("ça suffit commeç ça");
+            EndDialog();
+        }
+    }
+
     void Update()
     {
         if (talkingNow == true)
