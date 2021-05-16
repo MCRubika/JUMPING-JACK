@@ -5,15 +5,20 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {   //Instance
     public static PlayerController pcInstance;
+
     //Déplacement
     public float movementSpeed;
     public Rigidbody2D rb;
+
     [Header("Jump")]
     public float JumpForce = 20f;
     public Transform feet;
     public LayerMask groundLayers;
+
     public int i = 0;
     public int nombreDeSaut;
+    public int initSaut;
+
     public GameObject sautUI1;
     public GameObject sautUI2;
     private float distanceGround; 
@@ -23,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
     float mx;
 
+    private float timer;
+
     private void Awake()
     {
         pcInstance = this;
@@ -31,18 +38,33 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         distanceGround = feet.position.y - transform.position.y;
+        nombreDeSaut = 0;
     }
 
     private void Update()
     {
+        nombreDeSaut = LevelManager.instance.augmentationSauts;
+
         mx = Input.GetAxisRaw("Horizontal");
+        initSaut = 1 + nombreDeSaut;
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             Jump();
         }
 
-        if (Input.GetButtonDown("Jump") && IsGrounded()&& i < nombreDeSaut)
+        if (isJumping)
+        {
+            timer += Time.deltaTime;
+
+            if(timer > 0.5)
+            {
+                isJumping = false;
+                timer = 0;
+            }
+        }
+
+        /*if (Input.GetButtonDown("Jump") && i < initSaut)
         {
             isJumping = true;
         }
@@ -50,7 +72,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             isJumping = false;
-        }
+        }*/
     }
 
     private void FixedUpdate()
@@ -61,13 +83,14 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        if (i < nombreDeSaut)
+        if (i < initSaut)
         {
             Vector2 movement = new Vector2(rb.velocity.x, JumpForce);
             rb.velocity = movement;
             i ++;
-    
-     
+
+            isJumping = true;
+
             if (i == 1)
             {
                 sautUI1.SetActive(false);

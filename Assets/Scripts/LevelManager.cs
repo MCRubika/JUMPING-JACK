@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
     public int poules;
     public int jouet;
     public int sautDansLeVide;
+    public int augmentationSauts;
 
     private void Awake()
     {

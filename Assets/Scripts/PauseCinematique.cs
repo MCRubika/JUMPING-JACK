@@ -13,6 +13,7 @@ public class PauseCinematique : MonoBehaviour
 
     bool canSkip;
     bool desactivate;
+   
     bool isplaying = true;
 
     public int isNotActivable;
