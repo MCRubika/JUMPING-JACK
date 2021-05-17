@@ -19,8 +19,6 @@ public class PlayerController : MonoBehaviour
     public int nombreDeSaut;
     public int initSaut;
 
-    public GameObject sautUI1;
-    public GameObject sautUI2;
     private float distanceGround; 
 
     public GameObject player;
@@ -91,14 +89,6 @@ public class PlayerController : MonoBehaviour
 
             isJumping = true;
 
-            if (i == 1)
-            {
-                sautUI1.SetActive(false);
-            }
-            else if (i == 2)
-            {
-                sautUI2.SetActive(false);
-            }
             if (Input.GetKeyDown(KeyCode.F))
             {
                 i = 0;
