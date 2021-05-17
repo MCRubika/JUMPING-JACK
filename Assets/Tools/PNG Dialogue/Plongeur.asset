@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab63e37dae716444849fc7f37342cfd, type: 3}
+  m_Name: Plongeur
+  m_EditorClassIdentifier: 
+  nameuh: Plongueur
+  dialogue:
+  - "Salut...Toi aussi tu viens me d\xE9fier en compet de saut ? "
+  - "Si tu sautes de la falaise la, je te donne ma m\xE9daille dor\xE9e ! Reviens
+    me voir une fois que c'est fait !"
+  playerDialogue:
+  - Qu'est ce que j'y gagne ?
